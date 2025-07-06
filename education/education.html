@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,51 +6,74 @@
     <link rel="stylesheet" href="education.css" type="text/css">
 </head>
 <body>
-<header>
-    <h1>Education</h1>
-    <p>An <em>online resume</em> showcasing Ruby's <strong>career, projects, and educational background.</strong></p>
-</header>
-<div id="sidebar">
-    <div id="sidebar-logo">
-        <img src="../src/nav-logo.svg" alt="bunny doodle logo">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../education/education.html">Education</a></li>
-            <li><a href="../projects/projects.html">Projects</a></li>
-            <li><a href="../experience/experience.html">Experience</a></li>
-            <li><a href="../leadership/leadership.html">Leadership</a></li>
-            <li><a href="../skills/skills.html">Skills</a></li>
-        </ul>
-    </nav>
-</div>
-<main>
-    <div id="education">
-        <img src="" alt="">
-        <h2 id="college-name">Boston University</h2>
-        <p class="date">Boston, MA | May 2026</p>
-        <div id="degree">
-            <p><em>B.A. in Computer Science and Minor in Graphic Design</em></p>
-            <p>GPA: 3.76 / 4.00</p>
+    <header>
+        <h1>Education</h1>
+        <p>An <strong class="text-gradient">online resume</strong> section showcasing Ruby's <em>academic background and relevant
+            coursework.</em></p>
+    </header>
+    <div id="sidebar">
+        <div id="sidebar-logo">
+            <a href="../index.html">
+                <img src="../src/nav-logo.svg" alt="bunny doodle logo">
+            </a>
         </div>
-        <div id="coursework">
-            <h4>Relevant Coursework:</h4>
+        <nav>
             <ul>
-                <li>UX/UI Design Workshop</li>
-                <li>UX Design X-Lab Practicum</li>
-                <li>Intro to Web Development</li>
-                <li>Graphic Design Studio I</li>
-                <li>Graphic Design Typography I</li>
-                <li>Software Engineering</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Computer Systems</li>
+                <li><a href="../index.html">Home</a></li>
+                <li><span class="current-page"><a href="../education/education.html">Education</a></span></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../experience/experience.html">Experience</a></li>
+                <li><a href="../leadership/leadership.html">Leadership</a></li>
+                <li><a href="../skills/skills.html">Skills</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
-</main>
-<footer>
-    <p>All rights reserved by Ruby Chen <a href="">Credits</a> &#169;</p>
-</footer>
+    <main>
+        <div class="education">
+            <img src="../src/boston%20university.jpg" alt="">
+            <h2 class="school-name">Boston University</h2>
+            <p class="date">Boston, MA | May 2026</p>
+            <div class="degree">
+                <p><em>B.A. in Computer Science and Minor in Graphic Design</em></p>
+                <p>GPA: 3.76 / 4.00</p>
+            </div>
+            <div id="coursework">
+                <h4>Relevant Coursework:</h4>
+                <p>
+                    UX/UI Design Workshop, UX Design X-Lab Practicum, Intro to Web Development,
+                    Graphic Design Studio I, Graphic Design Typography I, Software Engineering,
+                    Data Structures & Algorithms, Computer Systems
+                </p>
+            </div>
+        </div>
+        <div id="education">
+            <img src="../src/ccat.jpg" alt="">
+            <h2 id="college-name">Carver Center for Arts and Technology</h2>
+            <p class="date">Towson, MD | May 2022</p>
+            <div id="degree">
+                <p><em>Major in Visual Arts</em></p>
+                <p>GPA: 3.96 / 4.00</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-text">
+            <div class="footer-left">
+                <div id="footer-left-top">
+                    <h3>Thanks for visiting!</h3>
+                    <p>Made with love and espresso ☕ &lt;3</p>
+                </div>
+                <p>All rights reserved by Ruby Chen <a href="">Credits</a> &#169;</p>
+            </div>
+            <div class="footer-right">
+                <p><strong>↓ Get in contact</strong></p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:rc071404@bu.edu">rc071404@bu.edu</a></li>
+                    <li><a href="link-to-your-resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
