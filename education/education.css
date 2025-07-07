@@ -1,12 +1,11 @@
 /* Note: I've taken CS103 before!! Therefore, I have a pretty solid
 background in html, css, and JS to do a few more things for the resume and
-have done this assignment once before already.
+have done this assignment once before already. More explanations of CSS styling
+that wasn't covered in class is in mp-1.pdf submitted into Gradescope.
 
 This version of my resume is much more design-oriented and I mapped out every page
 beforehand on Figma to get a good idea of how to orient the layout:
-
 https://www.figma.com/design/ym405Lbif68vkDYnOpZjSM/mp-1?node-id=19-9&t=2vw7ig6y7C3LHRVR-1
-
  */
 
 *{
@@ -52,8 +51,8 @@ header p{
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 3%;
+    padding-left: 3%;
     border-right: 1px solid #EEEEEE;
     font-size: calc(2px + 1vw);
 }
@@ -75,7 +74,7 @@ nav a{
 }
 
 .current-page{
-    padding-bottom: 10px;
+    padding-bottom: 10%;
     border-bottom: 1px solid black;
 }
 
