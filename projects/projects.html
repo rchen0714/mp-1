@@ -8,17 +8,19 @@
 <body>
     <header>
         <h1>Projects</h1>
-        <p>An <em>online resume</em> showcasing Ruby's <strong>career, projects, and educational background.</strong></p>
+        <p>An <strong class="text-gradient">online resume</strong> section showcasing Ruby's <em>projects</em></p>
     </header>
     <div id="sidebar">
         <div id="sidebar-logo">
-            <img src="../src/nav-logo.svg" alt="bunny doodle logo">
+            <a href="../index.html">
+                <img src="../src/nav-logo.svg" alt="bunny doodle logo">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../education/education.html">Education</a></li>
-                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><span class="current-page"><a href="../projects/projects.html">Projects</a></span></li>
                 <li><a href="../experience/experience.html">Experience</a></li>
                 <li><a href="../leadership/leadership.html">Leadership</a></li>
                 <li><a href="../skills/skills.html">Skills</a></li>
@@ -27,41 +29,49 @@
     </div>
     <main>
         <div class="project">
-            <img src="src/talentora.png" alt="Talentora logo">
-            <h3 class="role">Talentora AI | Co-Founder & UX Designer</h3>
-            <p class="date">Sept 2024 – Present</p>
-            <div class="description">
-                <ul>
-                    <li>Co-founded an HR tech platform enabling real-time, LLM-based AI-driven candidate assessments with ATS integrations and sentiment analysis.</li>
-                    <li>Led UX design efforts, branding, wireframes, and user interviews in a 7-member team of engineers and designers.</li>
-                    <li>Raised $1K in funding; selected for Innovate@BU’s Innovation Pathway and Launch Lab; nominated for Audience Choice Award for BU Spark! Demo Day.</li>
-                </ul>
+            <img src="../src/Talentora(2).jpg" alt="Talentora logo">
+            <div class="project-text">
+                <h3 class="role">Talentora AI | Co-Founder & UX Designer</h3>
+                <p class="date">Sept 2024 – Present</p>
+                <div class="description">
+                    <ul>
+                        <li>Co-founded an HR tech platform enabling real-time, LLM-based AI-driven candidate assessments with ATS integrations and sentiment analysis.</li>
+                        <li>Led UX design efforts, branding, wireframes, and user interviews in a 7-member team of engineers and designers.</li>
+                        <li>Raised $1K in funding; selected for Innovate@BU’s Innovation Pathway and Launch Lab; nominated for Audience Choice Award for BU Spark! Demo Day.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="project">
-            <img src="src/talentora.png" alt="Talentora logo">
-            <h3 class="role">Via | 1st Place BU Catalyst Designathon – Accessibility Track</h3>
-            <p class="date">March 2024</p>
-            <div class="description">
-                <ul>
-                    <li>Designed and prototyped 25+ screens for a map-based app enabling users to rate and review the accessibility of public routes and locations.</li>
-                    <li>Collaborated in a 3-person team using Figma, Adobe Illustrator, and Google Forms during a rapid 2-day project sprint.</li>
-                </ul>
+            <img src="../src/via.jpg" alt="Via advertisement graphic">
+            <div class="project-text">
+                <h3 class="role">Via | 1st Place BU Catalyst Designathon – Accessibility Track</h3>
+                <p class="date">March 2024</p>
+                <div class="description">
+                    <ul>
+                        <li>Designed and prototyped 25+ screens for a map-based app enabling users to rate and review the accessibility of public routes and locations.</li>
+                        <li>Collaborated in a 3-person team using Figma, Adobe Illustrator, and Google Forms during a rapid 2-day project sprint.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="project">
-            <img src="src/talentora.png" alt="Talentora logo">
-            <h3 class="role">BCS Social Justice App | DS488 – UX Design X-Lab Practicum</h3>
-            <p class="date">April 2025</p>
-            <div class="description">
-                <ul>
-                    <li>Created a web platform for client Dr. Starks to deliver coaching, foster community, and distribute social justice resources.</li>
-                    <li>Implemented key features including account creation, calendar-booking system, digital community forum, and digital storefront, culminating in 30+ wireframes.</li>
-                    <li>Conducted user testing and iterated designs to enhance onboarding, dashboard usability, and community interaction.</li>
-                </ul>
+            <img src="../src/DS488%20BCS%20Social%20Justice%20App.jpg" alt="Poster for BCS Social Justice App">
+            <div class="project-text">
+                <h3 class="role">BCS Social Justice App | DS488 – UX Design X-Lab Practicum</h3>
+                <p class="date">April 2025</p>
+                <div class="description">
+                    <ul>
+                        <li>Created a web platform for client Dr. Starks to deliver coaching, foster community, and distribute social justice resources.</li>
+                        <li>Implemented key features including account creation, calendar-booking system, digital community forum, and digital storefront, culminating in 30+ wireframes.</li>
+                        <li>Conducted user testing and iterated designs to enhance onboarding, dashboard usability, and community interaction.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="project">
-                <img src="src/talentora.png" alt="Talentora logo">
+        </div>
+
+        <div class="project">
+            <div class="project-text">
                 <h3 class="role">Javascript Calculator</h3>
                 <p class="date">July 2025</p>
                 <div class="calculator">
@@ -75,10 +85,27 @@
                     <button onclick="doClear()">Clear</button>
                     <h4 id="output"></h4>
                 </div>
+            </div>
         </div>
     </main>
     <footer>
-        <p>All rights reserved by Ruby Chen <a href="">Credits</a> &#169;</p>
+        <div id="footer-text">
+            <div class="footer-left">
+                <div id="footer-left-top">
+                    <h3>Thanks for visiting!</h3>
+                    <p>Made with love and espresso ☕ &lt;3</p>
+                </div>
+                <p>All rights reserved by Ruby Chen <a href="">Credits</a> &#169;</p>
+            </div>
+            <div class="footer-right">
+                <p><strong>↓ Get in contact</strong></p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rchen0714" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:rc071404@bu.edu">rc071404@bu.edu</a></li>
+                    <li><a href="../src/Ruby%20Resume%202025-6.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="project.js"></script>
 </body>

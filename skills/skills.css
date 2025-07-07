@@ -1,0 +1,357 @@
+/* Note: I've taken CS103 before!! Therefore, I have a pretty solid
+background in html, css, and JS to do a few more things for the resume and
+have done this assignment once before already.
+
+This version of my resume is much more design-oriented and I mapped out every page
+beforehand on Figma to get a good idea of how to orient the layout:
+
+https://www.figma.com/design/ym405Lbif68vkDYnOpZjSM/mp-1?node-id=19-9&t=2vw7ig6y7C3LHRVR-1
+
+                                                                         */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-gradient{
+    background: linear-gradient(to left, #FF9C9C, #3854E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body{
+    background-color: #FFFCF7;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+
+
+/* Styling for header section starts here*/
+
+header {
+    margin: 5% 5% 5% 20%;
+}
+
+header h1{
+    margin-bottom: 5%;
+    font-size: calc(10px + 2vw)
+}
+
+header p{
+    font-size: calc(3px + 1vw);
+}
+
+/* Styling for all nav*/
+
+#sidebar {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #EEEEEE;
+    font-size: calc(2px + 1vw);
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    margin: 10% 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.current-page{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#sidebar-logo{
+    margin-bottom: 3vh;
+}
+/* Styling for main*/
+
+main{
+    margin: 5% 5% 7% 20%;
+    font-size: calc(3px + 1vw);
+}
+
+#professional-skills{
+    margin: 0 3% 5% 3%;
+    text-align: center;
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#professional-skills ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#professional-skills h3{
+    margin-top: 0;
+}
+
+#software{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 0 3% 5% 3%;
+}
+
+#software ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#software li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3% 0;
+}
+
+#software img{
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 3vh;
+}
+
+
+#programming-languages{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 0 3% 5% 3%;
+}
+
+#programming-languages ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+#programming-languages li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3% 0;
+}
+
+#programming-languages img{
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+}
+
+main li{
+
+}
+
+main h3, h4{
+    margin: 2% 0;
+}
+
+main p{
+    margin: 2% 0;
+}
+
+
+
+
+/* Styling for the footer*/
+
+footer{
+    margin-left: 15%;
+}
+
+#footer-text{
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F7EFE5;
+}
+
+footer ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li{
+    margin: 3% 0;
+    font-size: calc(2px + 1vw);
+}
+
+.footer-left p{
+    font-size: calc(2px + 1vw);
+}
+
+.footer-left h3{
+    font-size: calc(10px + 1vw);
+    margin-bottom: 2%;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right{
+    text-align: right;
+}
+
+@media screen and (max-width: 750px){
+
+    /* Styling for header section starts here*/
+
+    header{
+        margin: 3% 5% 0 5%;
+        text-align: center;
+    }
+
+    header p{
+        font-size: calc(5px + 1vw);
+    }
+
+
+
+    /* Styling for all nav*/
+
+    #sidebar{
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 5vh 0;
+    }
+
+    #sidebar-logo{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav li{
+        display: inline;
+        margin: auto;
+        font-size: calc(3px + 1vw);
+    }
+
+    /* Styling for main*/
+
+    #software img {
+        max-width: 50%;
+        border-radius: 20px;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    main{
+        margin: 0 5% 3% 5%;
+        font-size: calc(5px + 1vw);
+    }
+
+    .leadership{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+        padding: 0 3% 3% 3%;
+
+    }
+
+    .leadership-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .leadership li{
+        padding: 1% 0;
+    }
+
+    main h3{
+        margin: 1% 0;
+    }
+
+    main p{
+        margin: 1% 0;
+    }
+
+    .date{
+        margin-bottom: 3%;
+    }
+
+
+    /* Styling for the footer*/
+
+    footer{
+        margin: 0;
+    }
+
+    .footer-right p{
+        font-size: calc(5px + 2vw);
+    }
+
+    .footer-right li{
+        margin: 3% 0;
+        font-size: calc(5px + 1vw);
+    }
+
+    .footer-left h3{
+        font-size: calc(5px + 2vw);
+        margin-bottom: 2%;
+    }
+
+    .footer-left p{
+        font-size: calc(5px + 1vw);
+    }
+
+}

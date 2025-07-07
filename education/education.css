@@ -90,8 +90,35 @@ main{
 }
 
 main img {
-    max-width: 50%;
-    border-radius: 5%;
+    max-width: 40%;
+    border-radius: 20px;
+}
+
+.education{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    padding: 0 3% 5% 3%;
+
+}
+
+.edu-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main h2, h4{
+    margin: 2% 0;
+}
+
+main p{
+    margin: 2% 0;
+}
+
+.date{
+    margin: 0;
 }
 
 
@@ -147,6 +174,8 @@ footer li{
 
 @media screen and (max-width: 750px){
 
+    /* Styling for header section starts here*/
+
     header{
         margin: 3% 5% 0 5%;
         text-align: center;
@@ -156,12 +185,9 @@ footer li{
         font-size: calc(5px + 1vw);
     }
 
-    main{
-        margin: 0 5% 3% 5%;
-        font-size: calc(5px + 1vw);
-    }
 
 
+    /* Styling for all nav*/
 
     #sidebar{
         position: static;
@@ -194,6 +220,50 @@ footer li{
         margin: auto;
         font-size: calc(3px + 1vw);
     }
+
+    /* Styling for main*/
+
+    main img {
+        max-width: 100%;
+        border-radius: 20px;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    main{
+        margin: 0 5% 3% 5%;
+        font-size: calc(5px + 1vw);
+    }
+
+    .education{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5%;
+        padding: 0 3% 3% 3%;
+
+    }
+
+    .edu-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main h2, h4{
+        margin: 1% 0;
+    }
+
+    main p{
+        margin: 1% 0;
+    }
+
+    .date{
+        margin: 0;
+    }
+
+
+    /* Styling for the footer*/
 
     footer{
         margin: 0;
